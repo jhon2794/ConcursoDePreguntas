@@ -1,0 +1,77 @@
+;P;n1; En qué país surgió el arte decó
+Francia.
+En Estados Unidos.
+En Reino Unido
+En colombia
+;R;2
+100
+;P;n1;¿Cual es el libro más vendido en el mundo después de la Biblia?
+El Señor de los Anillos
+Don Quijote de la Mancha
+El Principito
+Cien años de Soledad
+;R;2
+100
+;P;n1; Qué parte de la capilla sixtina pintó Miguel Ángel
+Las paredes.
+El techo.
+Las columnas
+el suelo
+;R;1
+100
+;P;n1; Cuál sería el equivalente al Nobel en Arquitectura
+Pulitzer.
+Pretzel.
+Pritzker
+pulicer
+;R;1
+100
+;P;n1;Qué personaje de cómic creó Bob Kane cuando tenía 18 años
+Spiderman.
+Dardervil.
+Batman.
+linterna verde
+;R;1
+100
+;P;n2; ¿Cuántos jugadores por equipo participan en un partido de voleibol?
+2 jugadores
+3 jugadores
+4 jugadores
+5 jugadores
+;R;4
+200
+;P;n2;¿De qué marca alemana Messi es embajador
+adidas
+nike
+umbro
+puma
+;R;1
+200
+;P;n2;¿que presidente paso a segunda vuelta
+petro
+fico
+zuluaga
+uribe
+;R;1
+200
+;P;n3;¿Cuál es la película más taquillera de la historia?
+advenger end game
+titanic
+superman
+spirderman
+;R;1
+300
+;P;n4; ¿Qué hecho hizo estallar la Primera Guerra Mundial?
+un asesinato
+una pelea
+una mujer
+un florero
+;R;1
+400
+;P;n5;¿Cuándo se creó la ONU
+1945
+1978
+1965
+1987
+;R;1
+500
