@@ -21,7 +21,12 @@ import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.LayoutStyle.ComponentPlacement;
-
+/**
+ * ventana que permite registrar un jugador
+ * 
+ * @author Jhon gutierrez
+ *
+ */
 public class Registro extends JFrame implements ActionListener {
 
 	private JPanel contentPane;
@@ -73,7 +78,13 @@ public class Registro extends JFrame implements ActionListener {
 						.addComponent(btnsalir).addContainerGap(23, Short.MAX_VALUE)));
 		contentPane.setLayout(gl_contentPane);
 	}
-
+	/**
+	 * metodo que permite capturar el evento de los botones y guardar un jugador
+	 *
+	 * 
+	 * @author Jhon gutierrez
+	 *
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
@@ -89,7 +100,6 @@ public class Registro extends JFrame implements ActionListener {
 		}
 		if (e.getSource() == btnsalir) {
 			MenuPrincipal menu = new MenuPrincipal(t);
-			System.out.print(t.getJugadores().get(0).getNombre());
 			t.guardarDatos();
 			menu.setVisible(true);
 			setVisible(false);

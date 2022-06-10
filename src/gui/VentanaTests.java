@@ -25,7 +25,12 @@ import javax.swing.JDesktopPane;
 import java.awt.event.ActionListener;
 import java.lang.reflect.Array;
 import java.awt.event.ActionEvent;
-
+/**
+ * ventana que carga las preguntas y respuesta.
+ * 
+ * @author Jhon gutierrez
+ *
+ */
 public class VentanaTests extends JFrame implements ActionListener {
 	private Test t;
 	private Jugador jugador;
@@ -91,7 +96,12 @@ public class VentanaTests extends JFrame implements ActionListener {
 		puntosacumulados = 0;
 		cargarpreguntas(preguntas.get(numeroPregunta));
 	}
-
+	/**
+	 *metodo que carga las preguntas y respuestas en la ventana
+	 * 
+	 * @author Jhon gutierrez
+	 *
+	 */
 	public void cargarpreguntas(Pregunta p) {
 		puntaje.setText(jugador.getNombre() + " tu puntaje es: " + jugador.getPuntaje());
 		lblPregunta.setText(p.getPregunta());
@@ -100,7 +110,13 @@ public class VentanaTests extends JFrame implements ActionListener {
 		btnRespuesta3.setText(p.getRespuestas().get(2).getRespuesta());
 		btnRespuesta4.setText(p.getRespuestas().get(3).getRespuesta());
 	}
-
+	/**
+	 * metodo que captura los eventos de los botones que contiene las respuestas
+	 * y envia la pregunta para verificar si es correcta o no
+	 * 
+	 * @author Jhon gutierrez
+	 *
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnRespuesta1) {
@@ -126,11 +142,19 @@ public class VentanaTests extends JFrame implements ActionListener {
 		}
 		if (e.getSource() == btnretirada) {
 			mostrarMensaje(jugador.getNombre() + " Su puntaje fue: " + puntosacumulados);
+			jugador.setPuntaje(puntosacumulados);
 			setVisible(false);
 
 		}
 
 	}
+	/**
+	 * metodo que verifica si la respuesta es correcta, acumula los puntos, y permite cambiar la pregunta 
+	 * si la respuesta es correcta
+	 * 
+	 * @author Jhon gutierrez
+	 *
+	 */
 
 	public boolean respuestacorrecta(int i, int j) {
 		if (i == preguntas.get(j).getRespuestacorrecta()) {
@@ -138,8 +162,9 @@ public class VentanaTests extends JFrame implements ActionListener {
 			if (numeroPregunta == 5) {
 				mostrarMensaje(jugador.getNombre() + "ganaste" + "\n" + puntosacumulados);
 				setVisible(false);
+				jugador.setPuntaje(puntosacumulados);
+				return false;
 			}
-			
 			puntosacumulados += preguntas.get(numeroPregunta).getPuntos();
 			jugador.setPuntaje(puntosacumulados);
 			return true;
@@ -148,13 +173,18 @@ public class VentanaTests extends JFrame implements ActionListener {
 		puntosacumulados = 0;
 		jugador.setPuntaje(puntosacumulados);
 		mostrarMensaje(jugador.getNombre()   + " perdiste" + " Su puntaje fue: " + puntosacumulados);
-		setVisible(false);
 		MenuPrincipal menuPrincipal = new MenuPrincipal(t);
 		menuPrincipal.setVisible(true);
 		cargarpreguntas(preguntas.get(numeroPregunta));
+		setVisible(false);
 		return false;
 	}
-
+	/**
+	 * meotodo que sirve para mostrar mensajes al usuario
+	 * 
+	 * @author Jhon gutierrez
+	 *
+	 */
 	public void mostrarMensaje(String mensaje) {
 		JOptionPane.showMessageDialog(null, mensaje);
 	}

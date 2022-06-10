@@ -1,7 +1,12 @@
 package Logica;
 
 import java.io.Serializable;
-
+/**
+ * clase que contiene informacion de los jugadores
+ * 
+ * @author Jhon gutierrez
+ *
+ */
 public class Jugador  implements Serializable{
 	private  String nombre;
 	private int puntaje;

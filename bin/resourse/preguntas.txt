@@ -1,45 +1,38 @@
-;P;n1; En qué país surgió el arte decó
-Francia.
-En Estados Unidos.
-En Reino Unido
-En colombia
+;P;n1;¿Cuántos meses tienen 28 días?
+4
+1
+3
+2
 ;R;2
 100
-;P;n1;¿Cual es el libro más vendido en el mundo después de la Biblia?
-El Señor de los Anillos
-Don Quijote de la Mancha
-El Principito
-Cien años de Soledad
-;R;2
-100
-;P;n1; Qué parte de la capilla sixtina pintó Miguel Ángel
-Las paredes.
-El techo.
-Las columnas
-el suelo
-;R;1
-100
-;P;n1; Cuál sería el equivalente al Nobel en Arquitectura
-Pulitzer.
-Pretzel.
-Pritzker
-pulicer
-;R;1
-100
-;P;n1;Qué personaje de cómic creó Bob Kane cuando tenía 18 años
-Spiderman.
-Dardervil.
-Batman.
-linterna verde
-;R;1
-100
-;P;n2; ¿Cuántos jugadores por equipo participan en un partido de voleibol?
+;P;n1; ¿Cuántos jugadores por equipo participan en un partido de voleibol?
 2 jugadores
 3 jugadores
 4 jugadores
 5 jugadores
 ;R;4
 200
+;P;n1;¿Cuántos minutos tiene una hora?
+5
+67
+60
+44
+;R;3
+100
+;P;n1;¿que presidente paso a segunda vuelta
+petro
+fico
+zuluaga
+uribe
+;R;1
+100
+;P;n1;¿Cuántos kilos son una tonelada?
+333
+1000
+44444
+55
+;R;2
+100
 ;P;n2;¿De qué marca alemana Messi es embajador
 adidas
 nike
@@ -47,18 +40,74 @@ umbro
 puma
 ;R;1
 200
-;P;n2;¿que presidente paso a segunda vuelta
-petro
-fico
-zuluaga
-uribe
-;R;1
-200
-;P;n3;¿Cuál es la película más taquillera de la historia?
+;P;n2;¿Cuál es la película más taquillera de la historia?
 advenger end game
 titanic
 superman
 spirderman
+;R;1
+200
+;P;n2;¿Cual es el libro más vendido en el mundo después de la Biblia?
+El Señor de los Anillos
+Don Quijote de la Mancha
+El Principito
+Cien años de Soledad
+;R;2
+200
+;P;n2; Qué parte de la capilla sixtina pintó Miguel Ángel
+Las paredes.
+El techo.
+Las columnas
+el suelo
+;R;1
+200
+;P;n2; En qué país surgió el arte decó
+Francia.
+En Estados Unidos.
+En Reino Unido
+En colombia
+;R;2
+100
+;P;n2;¿Qué tipo de animal es un canguro?
+invertebrado
+no es un animal 
+acuatico
+mamifero
+;R;4
+200
+;P;n3;Qué personaje de cómic creó Bob Kane cuando tenía 18 años
+Spiderman.
+Dardervil.
+Batman.
+linterna verde
+;R;1
+300
+;P;n3;¿Cuántos días tiene un año natural?
+365 días
+345 días
+865 días
+65 días
+;R;1
+300
+;P;n3;¿Quién es el rey de España?
+El rey de España desde el año 2014 es Felipe VI
+no tiene rey
+El rey de España desde el año 2014 es arturo VI
+El rey de España desde el año 2014 es carlos VI
+;R;1
+300
+;P;n3;¿Quién escribió El Quijote?
+miguel de cervantes
+gabriel garcia marquez
+homero
+luis alberto
+;R;1
+300
+;P;n3; ¿Cuál es la capital de Alemania?
+berlin
+bogota
+roma
+iran
 ;R;1
 300
 ;P;n4; ¿Qué hecho hizo estallar la Primera Guerra Mundial?
@@ -68,10 +117,68 @@ una mujer
 un florero
 ;R;1
 400
-;P;n5;¿Cuándo se creó la ONU
+;P;n4;¿Cuándo se creó la ONU
 1945
 1978
 1965
 1987
 ;R;1
+400
+;P;n4;¿Quién es el protagonista de la Odisea?
+ulises
+poulofeo
+aquiles
+sandro
+;R;1
+400
+;P;n4; Cuál sería el equivalente al Nobel en Arquitectura
+Pulitzer.
+Pretzel.
+Pritzker
+pulicer
+;R;1
+400
+;P;n4;¿Cuándo empieza la edad moderna?
+se sitúa en la caída de Constantinopla (1453) o en el descubrimiento de América (1492).
+se sitúa en la caída de Constantinopla (1453) o en el descubrimiento de Europa (1492)
+se sitúa en la caída de Constantinopla (1567)
+se situa descubrimiento de Europa (1492)
+;R;1
+400
+;P;n5; ¿Cual es el segundo pais mas poblado del mundo?
+la india con 1.331 millones de habitantes.
+españa con 1.66 millones de habitantes.
+estados unidos con 1.77 millones de habitantes.
+brazil con 2.331 millones de habitantes.
+;R;1
 500
+;P;n5; ¿Ciudad más poblada mundo?
+Tokio  con 38 millones de habitantes
+nueva york  con 38 millones de habitantes
+madrid con 44 millones de habitantes
+bogota con 44 millones de habitantes
+;R;1
+500
+;P;n5; ¿De qué se alimentan los koalas?
+eucalipto
+hierbas
+fruta
+no se alimenta
+;R;1
+500
+;P;n5; ¿Quién escribió La Odisea?
+homero
+gabriel garcia marquez
+miguel de cervantes
+artuo
+;R;1
+500
+;P;n5; ¿Cuál es el país más grande del mundo?
+Rusia
+brazil
+estados unidos
+india
+;R;1
+500
+
+ 

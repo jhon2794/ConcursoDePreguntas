@@ -3,6 +3,7 @@ package gui;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -18,7 +19,14 @@ import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JTextField;
 
+/**
+ * ventana que incia el juego
+ * 
+ * @author Jhon gutierrez
+ *
+ */
 public class MenuPrincipal extends JFrame implements ActionListener {
+
 	private Test t;
 	private JButton btnjugar;
 	private JButton btnregistrarse;
@@ -29,6 +37,7 @@ public class MenuPrincipal extends JFrame implements ActionListener {
 
 	public MenuPrincipal(Test t) {
 		this.ventanaTests = ventanaTests;
+		this.registro = registro;
 		this.t = t;
 		setBounds(500, 50, 500, 500);
 		setTitle("ConcursoDePreguntas");
@@ -69,17 +78,23 @@ public class MenuPrincipal extends JFrame implements ActionListener {
 
 	}
 
+	/**
+	 * metodo que se encarga de capturar los eventos de los botones y acceder a las otras ventanas
+	 * 
+	 * @author Jhon gutierrez
+	 *
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnjugar) {
-				String name = JOptionPane.showInputDialog("introduzca el nombre");
-				if (t.BuscarJugador(name)!=null) {
-					VentanaTests ventanaTests = new VentanaTests(t,name);
-					ventanaTests.setVisible(true);
-					setVisible(false);
-				} else {
-					JOptionPane.showMessageDialog(null, "no se encuentra registrado");
-				}
+			String name = JOptionPane.showInputDialog("introduzca el nombre");
+			if (t.BuscarJugador(name) != null) {
+				VentanaTests ventanaTests = new VentanaTests(t, name);
+				ventanaTests.setVisible(true);
+				setVisible(false);
+			} else {
+				JOptionPane.showMessageDialog(null, "no se encuentra registrado");
+			}
 
 		}
 		if (e.getSource() == btnregistrarse) {

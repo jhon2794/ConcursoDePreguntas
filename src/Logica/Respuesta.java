@@ -1,5 +1,10 @@
 package Logica;
-
+/**
+ * clase que contiene informacion de las respuestas
+ * 
+ * @author Jhon gutierrez
+ *
+ */
 public class Respuesta {
 	
 private String respuesta;

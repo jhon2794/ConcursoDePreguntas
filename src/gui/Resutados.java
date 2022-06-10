@@ -3,6 +3,8 @@ package gui;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 import javax.swing.JButton;
@@ -16,23 +18,32 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
 import Logica.Jugador;
+import Logica.Pregunta;
 import Logica.Test;
 
-public class Resutados extends JFrame {
+/**
+ * ventana que muestra historial de los jugadores
+ * 
+ * @author Jhon gutierrez
+ *
+ */
+public class Resutados extends JFrame implements ActionListener {
 
 	private Test t;
 	private JPanel contentPane;
 	private JTable tableParticipantes;
-	private JButton btnSalir;
 	private JLabel lblTitulo;
 	private DefaultTableModel model;
-	private JButton btnEliminar;
+	ArrayList<Jugador> jugadores;
+	private JScrollPane scrollPane;
+	private JButton btnsalir;
 
 	/**
 	 * Create the frame.
 	 */
 	public Resutados(Test t) {
-		this.t= t;
+		jugadores = t.getJugadores();
+		this.t = t;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 432, 309);
 		contentPane = new JPanel();
@@ -42,7 +53,7 @@ public class Resutados extends JFrame {
 		setUndecorated(true);
 		contentPane.setLayout(null);
 
-		JScrollPane scrollPane = new JScrollPane();
+		scrollPane = new JScrollPane();
 		scrollPane.setBounds(35, 44, 342, 187);
 		contentPane.add(scrollPane);
 
@@ -55,17 +66,16 @@ public class Resutados extends JFrame {
 		tableParticipantes.getColumnModel().getColumn(1).setPreferredWidth(15);
 		scrollPane.setViewportView(tableParticipantes);
 
-		
-		
-		btnSalir.setBounds(219, 242, 158, 23);
-		contentPane.add(btnSalir);
-
 		lblTitulo = new JLabel("HISTORIAL DE PARTICIPANTES");
 		lblTitulo.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTitulo.setBounds(35, 11, 342, 22);
 		contentPane.add(lblTitulo);
-	
+
+		btnsalir = new JButton("Salir");
+		btnsalir.setBounds(155, 258, 113, 23);
+		btnsalir.addActionListener(this);
+		contentPane.add(btnsalir);
 		llenarTabla();
 	}
 
@@ -73,13 +83,23 @@ public class Resutados extends JFrame {
 	 * metodo que llema la tabla con los participantes registrados
 	 */
 	public void llenarTabla() {
-		ArrayList<Jugador> jugadores= t.getJugadores();
 		model.setRowCount(0);
 		model.setColumnCount(2);
-		for (Jugador jugador : jugadores) {
-			Object[] fila = new Object[2];
-			fila[0] = jugador.getNombre();
-			model.addRow(fila);
+		Object[] fila = new Object[2];
+		fila[0] = jugadores.get(0).getNombre();
+		fila[0] = jugadores.get(0).getPuntaje();
+		model.addRow(fila);
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == btnsalir) {
+			MenuPrincipal menuPrincipal = new MenuPrincipal(t);
+			menuPrincipal.setVisible(true);
+			setVisible(false);
+
 		}
+
 	}
 }
